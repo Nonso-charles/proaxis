@@ -20,7 +20,7 @@ body {
 #main {
     background-image: url('header-img.jpeg');
     min-height: 70vh;
-    background-position: bottom center;
+    background-position: left center;
     background-size: cover;
 }
 
@@ -45,7 +45,7 @@ nav {
 }
 
 .logo {
-   width: 15%;
+   width: 5%;
 }
 
 .nav-list {
@@ -94,6 +94,7 @@ nav {
 
 .main-content p {
     max-width: 250px;
+    font-size: 2rem;
     margin-bottom: 10px;
 }
 
@@ -329,6 +330,17 @@ margin-bottom: 20px;
         width: 100%;
         padding: 10px 30px;
         border-bottom: 1px solid var(--white);
+    }
+
+    .logo {
+        width: 10%;
+     }
+
+    #main {
+        background-image: url('header-img.jpeg');
+        min-height: 70vh;
+        background-position: bottom center;
+        background-size: cover;
     }
     
     .services {
