@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+
 :root {
     --primary: #536942;
     --secondary: #ffd936;
@@ -31,6 +32,10 @@ a {
     max-width: 1200px;
     padding: 16px;
     margin: auto;
+}
+
+section {
+    margin: 60px auto;
 }
 
 nav {
@@ -100,6 +105,203 @@ nav {
     width: 30px;
 }
 
+/*----- Services Section----*/
+.section-title {
+    font-size: 50px;
+    text-align: center;
+}
+
+.section-title .line {
+    width: 150px;
+    height: 4px;
+    border: 10px;
+    background: var(--secondary);
+    margin: auto;
+}
+
+.services {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.services-icon {
+    width: 15%;
+    margin: 20px 0;
+}
+
+.service {
+    width: 350px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    height: 300px;
+    transform: scale(1.2);
+    border-radius: 5px;
+}
+
+/*------ Testimonial Section ------*/
+
+.testimonial-title h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+.testimonial-title .line {
+    width: 150px;
+height: 4px;
+border: 10px;
+background: var(--secondary);
+margin: auto;
+margin-bottom: 20px;
+}
+
+.testimonial-section {
+    width: 90%;
+    max-width: 1200px;
+    overflow: hidden;
+    background: #f4f4f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    flex-wrap: wrap;
+}
+
+.testimonial {
+    flex: 1 1 calc(33.3% - 20px);
+    margin: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: #fff;
+}
+
+.quote-icon {
+    width: 100px;
+}
+
+.testimonial h4 {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.profile img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+}
+
+/*---- About-us Section -----*/
+#about-us {
+    background: #f5f5dc;
+}
+
+.about-content h4 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.about-content .line {
+    width: 150px;
+height: 4px;
+border: 10px;
+background: var(--secondary);
+margin: auto;
+margin-bottom: 20px;
+}
+
+.about-content h1 {
+    font-size: 25px;
+    text-align: center;
+}
+
+.about-content .highlight {
+    color: #d1b97f;
+    font-weight: bold;
+}
+
+.about-content p {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+/*----- FAQ Section ----*/
+.faq-section {
+    width: 90%;
+    max-width: 800px;
+    background: #d2b48c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.faq-section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.faq-section .line {
+        width: 150px;
+    height: 4px;
+    border: 10px;
+    background: var(--secondary);
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.faq-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #556b2f;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.faq-question h3 {
+    margin: 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.faq-answer {
+    padding: 15px;
+    display: none;
+    font-size: 1rem;
+}
+
+.toggle-btn {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    user-select: none;
+    transition: transform 0.3s;
+}
+
 
 @media screen and (max-width: 520px) {
     .menu-btn {
@@ -128,4 +330,41 @@ nav {
         padding: 10px 30px;
         border-bottom: 1px solid var(--white);
     }
+    
+    .services {
+        flex-direction: column;
+    }
+    
+    .service {
+        width: 280px;
+        margin: 0 auto;
+        margin-top: 30px;
+        transform: scale(1.2);
+    }
+    
+    .section-title h1 {
+        font-size: 2rem
+    }
+    
+    /*-----Testimonial Section----*/
+
+    .testimonial-container {
+        flex-wrap: nowrap;
+    }
+    
+    .testimonial {
+        flex: 0 0 100%;
+        margin: 0;
+    }
+    
+    .testimonial-title h1 {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*--- About Section ------*/
+.about-content h4 {
+    font-size: 30px;
+}
 }
