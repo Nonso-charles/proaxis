@@ -45,8 +45,18 @@ nav {
 }
 
 .logo {
-   width: 5%;
+    display: none;
 }
+
+.main-logo {
+   font-size: 3rem;
+}
+
+.highlight {
+    color: var(--secondary);
+}
+
+
 
 .nav-list {
     display: flex;
@@ -334,6 +344,11 @@ margin-bottom: 20px;
 
     .logo {
         width: 10%;
+        display: block;
+     }
+     
+     .main-logo {
+         display: none;
      }
 
     #main {
