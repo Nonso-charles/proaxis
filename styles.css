@@ -143,14 +143,24 @@ nav {
     margin: 20px 0;
 }
 
-.service {
-    width: 350px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+.card {
+    flex: 1 1 calc(25% - 20px);
+    max-width: calc(25% - 20px);
+    padding: 20px;
+    background: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 8px;
     text-align: center;
-    height: 300px;
-    transform: scale(1.2);
-    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+
+
 
 /*------ Testimonial Section ------*/
 
@@ -362,6 +372,11 @@ margin-bottom: 20px;
         flex-direction: column;
     }
     
+    .card {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+    
     .service {
         width: 280px;
         margin: 0 auto;
@@ -394,4 +409,12 @@ margin-bottom: 20px;
 .about-content h4 {
     font-size: 30px;
 }
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .card {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row */
+    max-width: calc(50% - 20px);
+  }
 }
